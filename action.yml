@@ -1,4 +1,4 @@
-name: 'Setup Redis'
+name: 'Setup Redis with password'
 description: 'Setup Redis database'
 author: 'getong'
 branding:
