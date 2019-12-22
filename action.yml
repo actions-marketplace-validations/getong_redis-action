@@ -1,6 +1,6 @@
 name: 'Setup Redis'
 description: 'Setup Redis database'
-author: 'Zhulik'
+author: 'getong'
 branding:
   icon: 'database'
   color: 'red'
@@ -9,6 +9,18 @@ inputs:
     description: 'Version of Redis to use'
     required: false
     default: 'latest'
+  host port:
+    description: 'the port of host'
+    required: false
+    default: 6379
+  container port:
+    description: 'The port of container'
+    required: false
+    default: 6379
+  redis password:
+    description: 'Redis Server password'
+    required: false
+    default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'

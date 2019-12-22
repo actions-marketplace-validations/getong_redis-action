@@ -11,9 +11,12 @@ See [action.yml](action.yml)
 Basic:
 ```yaml
 steps:
-- uses: zhulik/redis-action@v1.0.0
+- uses: getong/redis-action@v1.0.0
   with:
-    redis version: '5'
+    redis version: '5.0.7' # Optional, default value is "latest". The version of the redis
+    host port: 6379 # Optional, default value is 6379. The port of host
+    container port: 6379 # Optional, default value is 6379. The port of container
+    redis password: '123456' # Optional, default is empty
 ```
 
 # License
