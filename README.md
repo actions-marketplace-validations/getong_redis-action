@@ -11,7 +11,7 @@ See [action.yml](action.yml)
 Basic:
 ```yaml
 steps:
-- uses: getong/redis-action@v1.0.0
+- uses: getong/redis-action@v1
   with:
     redis version: '5.0.7' # Optional, default value is "latest". The version of the redis
     host port: 6379 # Optional, default value is 6379. The port of host
